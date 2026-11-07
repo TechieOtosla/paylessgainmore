@@ -7,5 +7,8 @@ pipeline {
     stage('Archive') {
       steps { archiveArtifacts artifacts: 'target/*.war' }
     }
+    stage('Deploy') {
+      steps { sh 'cp target/paylessgainmore-1.0.0.war /var/lib/tomcat10/webapps/paylessgainmore.war' }
+    }
   }
 }
