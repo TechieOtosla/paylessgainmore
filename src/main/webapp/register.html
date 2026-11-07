@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Register - PayLessGainMore</title>
+  <meta name="description" content="Register to shop at PayLessGainMore">
+  <meta name="keywords" content="register, computer store">
+</head>
+<body>
+  <h1>Register</h1>
+  <form onsubmit="saveName(); return false;">
+    <label>Your name: <input id="nm" required></label>
+    <button type="submit">Continue</button>
+  </form>
+  <script>
+    function saveName() {
+      var name = document.getElementById("nm").value.trim();
+      if (!name) return;
+      document.cookie = "username=" + encodeURIComponent(name) + "; max-age=31536000; path=/";
+      location.href = "index.html";
+    }
+  </script>
+</body>
+</html>
