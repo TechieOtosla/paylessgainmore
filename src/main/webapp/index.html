@@ -1,24 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>PayLessGainMore</title>
-  <meta name="description" content="PayLessGainMore computer store">
-  <meta name="keywords" content="computer store, hardware, software">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PayLessGainMore - Computer Store</title>
+<meta name="description" content="PayLessGainMore sells computer hardware, software and electronic components across the US.">
+<meta name="keywords" content="computer store, hardware, software, electronics, New Jersey">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1 id="welcome"></h1>
-  <script>
-    function getCookie(name) {
-      var m = document.cookie.match(new RegExp("(?:^|; )" + name + "=([^;]*)"));
-      return m ? decodeURIComponent(m[1]) : null;
-    }
-    var user = getCookie("username");
-    if (!user) {
-      location.href = "register.html";
-    } else {
-      document.getElementById("welcome").textContent = "Welcome " + user;
-    }
-  </script>
+<header><div class="logo">PayLessGainMore</div><nav id="nav"></nav></header>
+<main>
+  <section class="hero">
+    <div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div>
+    <svg class="pc" viewBox="0 0 100 80" aria-hidden="true"><rect x="10" y="5" width="80" height="50" rx="6" fill="#fff"/><rect x="16" y="11" width="68" height="38" rx="3" fill="#2563eb"/><rect x="42" y="55" width="16" height="10" fill="#fff"/><rect x="28" y="65" width="44" height="6" rx="3" fill="#fff"/></svg>
+    <h1 id="welcome"></h1>
+    <p>Quality computer products at the best prices, delivered across the US.</p>
+  </section>
+  <div class="grid">
+    <a class="card cat" href="hardware.html"><div class="ic">&#128421;</div><h3>Hardware</h3></a>
+    <a class="card cat" href="software.html"><div class="ic">&#128191;</div><h3>Software</h3></a>
+    <a class="card cat" href="electronics.html"><div class="ic">&#128268;</div><h3>Electronics</h3></a>
+  </div>
+</main>
+<script src="common.js"></script>
+<script>
+var user = requireUser();
+if (user) document.getElementById("welcome").textContent = "Welcome " + user;
+</script>
 </body>
 </html>
