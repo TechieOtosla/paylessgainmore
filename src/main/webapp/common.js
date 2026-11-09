@@ -4,8 +4,7 @@ var PRODUCTS = {
     ["Intel Core i7 Processor", "12-core desktop CPU, 4.9 GHz boost.", 389],
     ["16GB DDR5 RAM Kit", "2 x 8GB, 5600 MHz memory kit.", 74],
     ["1TB NVMe SSD", "PCIe 4.0 solid state drive, 7000 MB/s.", 89],
-    ["RTX Graphics Card", "8GB GDDR6 card for gaming and design.", 449],
-    ["Gaming Laptop 15-inch", "Core i7, 16GB RAM, 512GB SSD, RTX graphics.", 999]
+    ["RTX Graphics Card", "8GB GDDR6 card for gaming and design.", 449]
   ],
   software: [
     ["Operating System Pro", "64-bit OS with lifetime licence.", 139],
