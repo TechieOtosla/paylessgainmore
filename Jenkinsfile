@@ -1,6 +1,9 @@
 pipeline {
   agent { label 'maven' }
   stages {
+    stage('Check pages') {
+      steps { sh 'bash scripts/check-meta.sh' }
+    }
     stage('Build') {
       steps { sh 'mvn -B clean package' }
     }
