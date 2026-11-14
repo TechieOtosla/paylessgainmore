@@ -29,3 +29,4 @@ button,.btn{background:var(--ac);color:#fff;border:0;border-radius:8px;padding:9
 input,select{font:inherit;padding:8px;border-radius:8px;border:1px solid var(--bd);background:var(--bg);color:var(--tx);width:100%}
 label{display:block;margin:12px 0 4px;font-weight:600}
 .promo{margin-top:20px;padding:12px;border-radius:12px;background:#f59e0b;color:#14213d;text-align:center;font-weight:700}
+.hours{margin-top:12px;text-align:center;font-weight:600}
